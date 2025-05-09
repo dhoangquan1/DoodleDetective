@@ -1,0 +1,4 @@
+server/venv
+DoodleDetective/.gradle/
+DoodleDetective/.idea/
+DoodleDetective/.local.properties

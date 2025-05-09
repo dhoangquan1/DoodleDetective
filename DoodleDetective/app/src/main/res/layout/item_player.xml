@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp"
+    android:layout_margin="8dp"
+    android:background="@color/highlight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/mid_green"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

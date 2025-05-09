@@ -1,0 +1,1 @@
+curl -X POST -F file=@lightning/cat.png http://localhost:5050/predict

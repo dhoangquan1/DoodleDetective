@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.doodledetective" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:fontFamily">@font/arcade</item>
+    </style>
+
+    <style name="Theme.doodledetective" parent="Base.Theme.doodledetective" />
+</resources>

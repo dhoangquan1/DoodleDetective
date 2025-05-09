@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="@color/lightest_green">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score: 0"
+                    android:textSize="30sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/mid_green"/>
+
+                <TextView
+                    android:id="@+id/timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time: 10"
+                    android:textSize="30sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="end"
+                    android:textColor="@color/crimson"/>
+            </LinearLayout>
+
+            <!-- Prediction result -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/prediction_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Prediction 1\nPrediction 2\nPrediction 3\nPrediction 4\nPrediction 5"
+                    android:textSize="24sp"
+                    android:lineSpacingExtra="4dp"
+                    android:maxLines="5"
+                    android:ellipsize="none"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_green"/>
+
+                <TextView
+                    android:id="@+id/prediction_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0%\n0%\n0%\n0%\n0%"
+                    android:textSize="24sp"
+                    android:lineSpacingExtra="4dp"
+                    android:maxLines="5"
+                    android:ellipsize="none"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/mid_green"/>
+            </LinearLayout>
+
+            <!-- Clear button -->
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/mid_green"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- Prompt text -->
+            <TextView
+                android:id="@+id/prompt_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prompt"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:paddingBottom="16dp"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_green"/>
+
+            <!-- Custom Draw View -->
+            <edu.wpi.cs.cs4518.doodledetective.DrawView
+                android:id="@+id/draw_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
